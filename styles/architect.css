@@ -1,6 +1,111 @@
 /* works sans font style added from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700;800&display=swap');
 
-*{
+/* Shared Styless */
+* {
     font-family: 'Work Sans', sans-serif;
 }
+
+.btn-primary {
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Header section */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+    /* margin-right: 30px; */
+}
+
+/* banner section */
+/* img baade pura banner tai majhe tai shetake alada div er majhe niye & width-856px ke max-width 800px diye set kore dilam,lekha gulo venge ashbe */
+
+.banner-content {
+    text-align: center;
+    /* justify-content: center; */
+    max-width: 800px;
+    margin: 0 auto;
+    /* majhe anar jonno (bcz eta purata 1ta content )margin use korlam karon (margin to nai tai top bottom dilam na but right left auto diye dilam) abar margin 530 diyeo kora jay/horizontal centre kora jay/
+    flex diyeo kora jao shekhetre content ke child banate hobe */
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    font-weight: 400;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/* responsive media queries */
+/* for mobile devices */
+@media screen and (max-width: 600px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+       
+        flex-direction: column;
+    }
+}
+
+/* for tablet users */
+@media screen and (min-width:600px) and (max-width: 990px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+       
+        flex-direction: column;
+    }
+
+}
+
+
+
